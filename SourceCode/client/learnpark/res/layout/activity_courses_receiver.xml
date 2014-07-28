@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/share_course_ok"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="8dp"
+        android:background="@drawable/button_default"
+        android:text="导入\n成功"
+        android:textColor="#000"
+        android:textSize="100sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/style_text_common"
+        android:gravity="center"
+        android:text=">>>返回查看最新课表&lt;&lt;&lt;"
+        android:textSize="20sp" />
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <solid android:color="#76EEC6"/>
+    <!-- 设置边距 -->
+  
+    <!-- 控制边界颜色和笔触大小 -->
+    <!--
+         控制界面颜色渐变
+    -->
+    <!-- 控制圆角大小 -->
+  
+</shape>

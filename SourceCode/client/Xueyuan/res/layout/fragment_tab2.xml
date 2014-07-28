@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <net.learnpark.app.teacher.learnpark.shixian.HvScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:animationCache="true" >
+
+        <!-- 作者：peng 时间：1814年6月3日 14:24:28 -->
+        <!-- 课程界面布局  可以水平和垂直滚动 -->
+        <!-- bug  水平和垂直不能同时滚动 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:ems="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/actionbar_bg"
+                        android:lines="1"
+                        android:padding="5dp"
+                        android:text="" />
+
+                    <TextView
+                        android:layout_width="72dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/courses_item_bg"
+                        android:padding="5dp"
+                        android:text="星期一" />
+
+                    <TextView
+                        android:layout_width="72dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/courses_item_bg"
+                        android:padding="5dp"
+                        android:text="星期二" />
+
+                    <TextView
+                        android:layout_width="72dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/courses_item_bg"
+                        android:padding="5dp"
+                        android:text="星期三" />
+
+                    <TextView
+                        android:layout_width="72dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/courses_item_bg"
+                        android:padding="5dp"
+                        android:text="星期四" />
+
+                    <TextView
+                        android:layout_width="72dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/courses_item_bg"
+                        android:padding="5dp"
+                        android:text="星期五" />
+
+                    <TextView
+                        android:layout_width="72dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/courses_item_bg"
+                        android:padding="5dp"
+                        android:text="星期六" />
+
+                    <TextView
+                        android:layout_width="72dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/courses_item_bg"
+                        android:padding="5dp"
+                        android:text="星期日" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:ems="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/courses_item_bg"
+                        android:lines="5"
+                        android:text="第一节" />
+
+                    <TextView
+                        android:id="@+id/day1_1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="5"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/day2_1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="5"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/day3_1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="5"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/day4_1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="5"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/day5_1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="5"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/day6_1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="5"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/day7_1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="5"
+                        android:text="" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="5" >
+
+                    <TextView
+                        android:ems="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/courses_item_bg"
+                        android:lines="5"
+                        android:text="第二节" />
+
+                    <TextView
+                        android:id="@+id/day1_2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="5"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/day2_2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="5"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/day3_2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="5"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/day4_2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="5"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/day5_2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="5"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/day6_2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="5"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/day7_2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="5"
+                        android:text="" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:ems="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/courses_item_bg"
+                        android:lines="5"
+                        android:text="第三节" />
+
+                    <TextView
+                        android:id="@+id/day1_3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="5"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/day2_3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="5"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/day3_3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="5"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/day4_3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="5"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/day5_3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="5"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/day6_3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="5"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/day7_3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="5"
+                        android:text="" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:ems="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/courses_item_bg"
+                        android:lines="5"
+                        android:text="第四节" />
+
+                    <TextView
+                        android:id="@+id/day1_4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="5"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/day2_4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="5"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/day3_4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="5"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/day4_4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="5"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/day5_4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="5"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/day6_4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="5"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/day7_4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="5"
+                        android:text="" />
+                </TableRow>
+                <!-- 上午下午的分界线 -->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/courses_item_bg"
+                    android:gravity="center"
+                    android:text="上午、下午分界线" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:ems="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/courses_item_bg"
+                        android:lines="5"
+                        android:text="第五节" />
+
+                    <TextView
+                        android:id="@+id/day1_5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="5"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/day2_5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="5"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/day3_5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="5"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/day4_5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="5"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/day5_5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="5"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/day6_5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="5"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/day7_5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="5"
+                        android:text="" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:ems="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/courses_item_bg"
+                        android:lines="5"
+                        android:text="第六节" />
+
+                    <TextView
+                        android:id="@+id/day1_6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="5"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/day2_6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="5"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/day3_6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="5"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/day4_6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="5"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/day5_6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="5"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/day6_6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="5"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/day7_6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="5"
+                        android:text="" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:ems="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/courses_item_bg"
+                        android:lines="5"
+                        android:text="第七节" />
+
+                    <TextView
+                        android:id="@+id/day1_7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="5"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/day2_7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="5"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/day3_7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="5"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/day4_7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="5"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/day5_7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="5"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/day6_7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="5"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/day7_7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="5"
+                        android:text="" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:ems="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/courses_item_bg"
+                        android:lines="5"
+                        android:text="第八节" />
+
+                    <TextView
+                        android:id="@+id/day1_8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="5"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/day2_8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="5"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/day3_8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="5"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/day4_8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="5"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/day5_8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="5"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/day6_8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="5"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/day7_8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="5"
+                        android:text="" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </net.learnpark.app.teacher.learnpark.shixian.HvScrollView>
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/actionbar_bg" >
+
+    <item
+        android:id="@+id/user_center"
+        android:title="个人中心"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/teacherinfo"
+        android:title="我的老师"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/course_share"
+        android:title="课表共享"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/howtouse"
+        android:title="使用教程"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/about"
+        android:title="关于"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/feedback"
+        android:title="意见反馈"
+        app:showAsAction="never"/>
+
+</menu>

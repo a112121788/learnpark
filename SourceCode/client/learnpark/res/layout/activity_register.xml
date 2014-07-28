@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <!-- 注册界面的布局，仿照QQ -->
+
+    <AutoCompleteTextView
+        android:id="@+id/register_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:hint="请输入你常用的邮箱" >
+    </AutoCompleteTextView>
+
+    <LinearLayout
+        android:id="@+id/login_password_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/register_username"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/register_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:hint="密码(6-16位数值和字母)"
+            android:password="true" >
+        </EditText>
+
+        <ImageView
+            android:id="@+id/login_photo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/hide_password"
+            android:visibility="gone" >
+        </ImageView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/login_password_container"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_default"
+        android:text="注册"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:id="@+id/register_agreement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/register_btn"
+        android:layout_below="@+id/register_btn"
+        android:checked="true"
+        android:text="已阅读并同意"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/reqister_agreement_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/register_agreement"
+        android:layout_below="@+id/register_agreement"
+        android:layout_marginLeft="30dp"
+        android:text="学苑使用协议" />
+
+</RelativeLayout>

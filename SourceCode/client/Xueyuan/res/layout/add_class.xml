@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/add_coursename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/course"
+        android:hint="课程名字"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/add_classname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/teacher"
+        android:hint="班级名称"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/add_department"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/course"
+        android:hint="所属院系"
+        android:textSize="16sp" />
+
+</LinearLayout>

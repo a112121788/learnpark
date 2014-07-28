@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- tab1中的string -->
+    <string name="app_name">学苑-教师端</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">设置</string>
+    <string name="action_weather">天气</string>
+    <string name="action_personalcenter">个人中心</string>
+    <string name="action_suggestion">意见反馈</string>
+    <string name="share">分享</string>
+    <string name="tab1_text_nicheng">姓名:</string>
+    <string name="tab1_text_nicheng1">张老师</string>
+    <string name="tab1_text_jinri">今日课程:</string>
+    <string name="tab1_text_jinri1">2</string>
+    <string name="tab1_text_mingri">明日课程:</string>
+    <string name="tab1_text_mingri1">0</string>
+    <string name="tab1_text_shangkekecheng">上课信息</string>
+    <string name="tab1_text_xingqi">星期:</string>
+    <string name="tab1_text_kecheng">课程:</string>
+    <string name="tab1_text_shijian">时间:</string>
+    <string name="tab1_text_didian">地点:</string>
+    <string name="tab1_text_zhuanye">专业:</string>
+    <string name="tab1_text_banji">班级:</string>
+    <string name="tab1_text_renshu">人数:</string>
+    <string name="tab1_dianming1">自动点名</string>
+    <string name="tab1_dianming2">手动点名</string>
+
+    <!-- 个人中心中的string -->
+    <string name="user_text_xuexiao">学校:</string>
+    <string name="user_text_xuexiao1">新乡学院</string>
+    <string name="user_text_yuanxi">院系:</string>
+    <string name="user_text_yuanxi1">数信系</string>
+    <string name="user_text_name">姓名:</string>
+    <string name="user_text_name1">张三</string>
+
+    <!-- 选课spinner中的选项 -->
+    <string-array name="xuankeSpinner">
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+        <item>星期日</item>
+    </string-array>
+
+    <string-array name="week">
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+        <item>星期日</item>
+        
+    </string-array>
+    <!-- 点名中的string -->
+    <string name="action_dianming_jieshu">点名结束</string>
+    
+    <string name="app_about">  学苑项目基于现在手机等android移动设备在学生团体特别是大学生团体中的普及量，我们将以此为切入点，着手开发出一款方便老师点名的App；在学生端，提供了一些贴近学生学习生活必须的信息，如学生课表，课程提醒，考试信息，在线学习视频的观看。
+简言之，学苑是一款为在校大学师生提供点名、签到、课程提醒、日程管理、在线课堂等服务的学习工具类的app。</string>
+<string name="check_update">版本更新</string>
+    <string name="version_now">当前版本:</string>
+    <string name="version_new">最新版本</string>
+    <string name="version_num">1.0</string>
+
+</resources>

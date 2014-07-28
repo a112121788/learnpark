@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="100dp"
+        android:orientation="vertical" >
+
+        <!-- 头像 -->
+
+        <LinearLayout
+            android:id="@+id/user_center_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/table_text_nocolor"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:text="头像"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/user_photo"
+                android:layout_width="51dp"
+                android:layout_height="45dp"
+                android:layout_weight="0.07"
+                android:src="@drawable/ic_user" />
+        </LinearLayout>
+        <!-- 昵称 -->
+
+        <LinearLayout
+            android:id="@+id/user_center_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="@drawable/table_text_nocolor"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="姓名"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/user_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="pengpeng"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <!-- 邮箱 -->
+
+        <LinearLayout
+            android:id="@+id/user_center_mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="@drawable/table_text_nocolor"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="邮箱"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/user_mail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:hint="邮箱暂不支持修改"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <!-- 学校 -->
+
+        <LinearLayout
+            android:id="@+id/user_center_school"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="@drawable/table_text_nocolor"
+            android:orientation="horizontal"
+            android:textSize="18sp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="学校"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/user_school"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18sp" />
+        </LinearLayout>
+       
+        <!-- 学号 -->
+
+        <LinearLayout
+            android:id="@+id/user_center_department"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            
+            android:background="@drawable/table_text_nocolor"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="学号"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/user_department"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="date"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/table_edittext_nocolor" >
+
+        <EditText
+            android:id="@+id/sendmsg_edittext_classname"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/table_edittext_nocolor"
+            android:hint="请点击下方的复选框选择班级"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/lay_spinner_sendmsg"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/sendmsg_edittext_classname"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/table_edittext_nocolor"
+            android:orientation="horizontal" >
+
+            <Spinner
+                android:id="@+id/spinner_class"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@null"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/image_spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:layout_weight="6"
+                android:gravity="right"
+                android:text="▼" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/sendmsg_editext_content"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/table_edittext_nocolor"
+            android:ems="500"
+            android:gravity="top"
+            android:hint="请输入信息内容反馈"
+            android:layout_below="@id/lay_spinner_sendmsg"
+            android:singleLine="false"
+            android:textSize="15sp" >
+        </EditText>
+        
+        <Button
+                android:id="@+id/sendmsg_btn_send"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/table_shape_button"
+                android:text="发送"
+                android:layout_below="@id/sendmsg_editext_content"
+                android:textSize="18sp" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="@drawable/table_edittext_nocolor">
+
+    <LinearLayout
+        android:id="@+id/item_addclass_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/item_listview_addclass_coursename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="课程名称:" />
+
+            <TextView
+                android:id="@+id/item_addclass_coursename1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_toRightOf="@id/item_listview_addclass_coursename"
+                android:text="数学分析" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/item_listview_addclass_classname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="班级名称:" />
+
+            <TextView
+                android:id="@+id/item_addclass_classname1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_toRightOf="@id/item_listview_addclass_classname"
+                android:text="信计一班" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/item_listview_addclass_department"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:text="所属院系:" />
+
+            <TextView
+                android:id="@+id/item_addclass_department1"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/item_listview_addclass_department"
+                android:text="信计一班" />
+        </RelativeLayout>
+    </LinearLayout>
+    
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_importstudents"/>
+</RelativeLayout>
