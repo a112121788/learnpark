@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/table_shape_button"
+        android:gravity="center"
+        android:text="手动点名"
+        android:textSize="20sp" >
+    </TextView>
+
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarThumbVertical="@drawable/scroll_toggle_on">
+    <TableLayout
+        android:id="@+id/dianming_table_manual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/table_shape_button" >
+
+        <TableRow
+            android:layout_margin="0.5dp"
+            android:background="#ffdedcd2" >
+
+            <TextView
+                android:background="@drawable/table_shape_fangkuang"
+                android:text="姓名"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:background="@drawable/table_shape_fangkuang"
+                android:text="学号"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:background="@drawable/table_shape_fangkuang"
+                android:text="性别"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:background="@drawable/table_shape_fangkuang"
+                android:text="是否已到"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+</ScrollView>
+</LinearLayout>

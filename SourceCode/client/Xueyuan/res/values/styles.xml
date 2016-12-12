@@ -1,0 +1,42 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!--
+         <style name="Actionbartheme" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@drawable/ic_background_actionbar</item>
+    </style>
+    -->
+
+    <style name="actionbar_test" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@drawable/actionbar_tab_bg_corlor</item>
+    </style>
+
+    <style name="tab1_text_tiaomustyle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">2dp</item>
+    </style>
+
+    <style name="tab1_text_neirongstyle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:padding">2dp</item>
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:actionBarStyle">@style/actionbar_test</item>
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+</resources>

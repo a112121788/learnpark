@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp" >
+
+    <RelativeLayout
+        android:id="@+id/class_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/table_shape_button" >
+
+        <TextView
+            android:id="@+id/students_textview_classname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="8dp"
+            android:text="班级:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/students_textview_coursename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/students_textview_classname"
+            android:text="课程:"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/class_message"
+        android:layout_marginTop="1dp"
+        android:scrollbarThumbVertical="@drawable/scroll_toggle_on" >
+
+        <TableLayout
+            android:id="@+id/students_tablelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/table_shape_button"
+            android:stretchColumns="*" >
+
+            <TableRow
+                android:layout_margin="0.5dp"
+                android:background="#ffdedcd2" >
+
+                <TextView
+                    android:background="@drawable/table_shape_fangkuang"
+                    android:gravity="center"
+                    android:text="姓名"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:background="@drawable/table_shape_fangkuang"
+                    android:gravity="center"
+                    android:text="学号 "
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:background="@drawable/table_shape_fangkuang"
+                    android:gravity="center"
+                    android:text="性别"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:background="@drawable/table_shape_fangkuang"
+                    android:gravity="center"
+                    android:text="缺勤数"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <!--
+                     <TextView
+                    android:background="@drawable/table_shape_fangkuang"
+                    android:text="备注"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                -->
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+</RelativeLayout>

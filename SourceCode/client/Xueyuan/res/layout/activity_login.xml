@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <!-- 登陆界面的布局，仿照QQ -->
+
+    <ImageView
+        android:id="@+id/login_head_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/head_img_bg" />
+
+    <AutoCompleteTextView
+        android:id="@+id/login_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/login_head_img"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="邮箱" >
+    </AutoCompleteTextView>
+
+    <LinearLayout
+        android:id="@+id/login_password_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/login_username"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/login_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:hint="密码"
+            android:password="true" >
+        </EditText>
+
+        <ImageView
+            android:id="@+id/login_photo"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:visibility="gone"
+            android:src="@drawable/hide_password" >
+        </ImageView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/login_password_container"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/table_shape_button"
+        android:text="登陆" />
+    <!-- 默认效果,带图片文字的登陆按钮  微博登录 -->
+
+    <TextView
+        android:id="@+id/login_forgetpwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="20dp"
+        android:text="忘记密码?"
+        android:textColor="#76EEC6"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/login_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:textSize="20sp"
+        android:background="@drawable/textbox"
+        android:text="新用户" />
+
+</RelativeLayout>

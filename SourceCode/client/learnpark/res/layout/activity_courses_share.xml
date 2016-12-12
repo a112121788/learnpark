@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="dp"
+        android:gravity="center"
+        android:text="两台手机需要在通过一个局域网里才能共享哦"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/share_course"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_default"
+            android:text="分享课表" />
+
+        <Button
+            android:id="@+id/get_course"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_default"
+            android:text="接受课表" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/course_qrcode"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:src="@drawable/actionbar_bg"
+        android:visibility="invisible" />
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <!-- 作者 peng  时间：2014年6月3日 14:22:55 -->
+    <!-- 项目启动界面 -->
+    <!-- 填过过课程后的界面 -->
+
+
+    <!-- 显示个人信息 以及今天的天气和课表 -->
+
+    <!-- 显示签到 课表，日程，课堂其中之一，用Fragment实现 -->
+	<!-- 占位符  -->
+    <LinearLayout
+        android:layout_below="@+id/home_page"
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="48dp"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/style_footer_common"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal" >
+
+        <!-- 签到 -->
+
+        <ImageView
+            android:id="@+id/checkin_footer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/checkin_footer_black"
+            android:textSize="20sp" />
+        <!-- 查看课程 -->
+
+        <ImageView
+            android:id="@+id/course_footer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/courses_foot_black"
+            android:textSize="20sp" />
+        <!-- 倒计时 -->
+
+        <ImageView
+            android:id="@+id/schedule_footer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/schedule_foot_black"
+            android:textSize="20sp" />
+        <!-- 在线课堂 -->
+
+        <ImageView
+            android:id="@+id/onlineclass_footer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/onlineclass_foot_black"
+            android:textSize="20sp" />
+        <ImageView
+            android:id="@+id/more_footer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/more_footer_black"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</RelativeLayout>

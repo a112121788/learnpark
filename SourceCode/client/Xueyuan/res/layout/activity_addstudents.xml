@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="添加学生前请先选择班级" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/table_edittext_nocolor_shape" >
+
+        <LinearLayout
+            android:id="@+id/lay_spinner_class"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/table_edittext_nocolor"
+            android:orientation="horizontal" >
+
+            <Spinner
+                android:id="@+id/spinner_class"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@null"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/image_spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:layout_weight="6"
+                android:gravity="right"
+                android:text="▼" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btn_img_add_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/btn_add_classes" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/add_students_single_lil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/table_edittext_nocolor_shape"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/add_students_single_onoff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/table_shape_button"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/add_students_single_text_onoff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="单个添加"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/add_students_single_image_onoff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/add_students_single_text_onoff"
+                android:src="@drawable/ic_notice_close" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/add_students_single_lilonoff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/table_edittext_nocolor" >
+
+                <TextView
+                    android:id="@+id/textview_add_studentname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="姓名:"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edittext_add_studentname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_toRightOf="@id/textview_add_studentname"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/table_edittext_nocolor" >
+
+                <TextView
+                    android:id="@+id/textview_add_studentnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="学号:"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edittext_add_studentnum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_toRightOf="@id/textview_add_studentnum"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/table_edittext_nocolor" >
+
+                <TextView
+                    android:id="@+id/textview_add_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="性别:"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_add_sex_boy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/textview_add_sex"
+                    android:checked="true"
+                    android:text="男"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_add_sex_girl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/checkbox_add_sex_boy"
+                    android:checked="false"
+                    android:text="女"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_add_student_single"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/table_shape_button"
+                android:text="确定"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+     <LinearLayout
+         android:id="@+id/add_students_group_lil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/table_edittext_nocolor"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/add_students_group_onoff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/table_edittext_nocolor"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/add_students_group_text_onoff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="快速添加"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/add_students_group_image_onoff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/add_students_group_text_onoff"
+                android:src="@drawable/ic_notice_open" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/add_students_group_lilonoff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/table_edittext_nocolor" >
+
+                <TextView
+                    android:id="@+id/textview_add_studentsnum_front"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="学号前缀:"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edittext_add_studentsnum_front"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="该班级学号相同的部分"
+                    android:text=""
+                    android:layout_toRightOf="@id/textview_add_studentsnum_front"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/table_edittext_nocolor" >
+
+                <TextView
+                    android:id="@+id/textview_add_studentsnum_begin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="开始编号:"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edittext_add_studentsnum_begin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="该班级学号不同的部分"
+                    android:text=""
+                    android:layout_toRightOf="@id/textview_add_studentsnum_begin"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/table_edittext_nocolor" >
+
+                <TextView
+                    android:id="@+id/textview_add_studentsnum_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="结束编号:"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edittext_add_studentsnum_end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="该班级学号不同的部分"
+                    android:text=""
+                    android:layout_toRightOf="@id/textview_add_studentsnum_end"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_add_students_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/table_shape_button"
+                android:text="确定"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+    
+</LinearLayout>

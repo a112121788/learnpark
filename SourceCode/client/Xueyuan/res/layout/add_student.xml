@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/add_studentname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/teacher"
+        android:hint="学生姓名"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/add_stunum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/course"
+        android:hint="学生学号"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_height="wrap_content" >
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:id="@+id/checkbox_imageview"
+            android:src="@drawable/teacher"/>
+
+        <CheckBox
+            android:id="@+id/checkbox_boy"
+            android:layout_toRightOf="@id/checkbox_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="男"
+            android:checked="true"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_girl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/checkbox_boy"
+            android:text="女"
+            android:checked="false"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</LinearLayout>

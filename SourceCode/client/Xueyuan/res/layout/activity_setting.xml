@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/table_edittext_nocolor"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/setting_courses_onoff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_edittext_nocolor"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/setting_text_courses_onoff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center"
+                    android:text="课程设置"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/setting_image_courses_onoff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/setting_text_courses_onoff"
+                    android:src="@drawable/ic_notice_open" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/setting_courses_lilnotice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <RelativeLayout
+                    android:id="@+id/setting_courses_import"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/table_edittext_nocolor" >
+
+                    <TextView
+                        android:id="@+id/setting_text_courses_import"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="0dp"
+                        android:layout_toLeftOf="@+id/setting_imagebutton_courses_import"
+                        android:text="恢复课表"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@id/setting_imagebutton_courses_import"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/ic_setting_more" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/setting_courses_export"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/table_edittext_nocolor" >
+
+                    <TextView
+                        android:id="@+id/setting_text_courses_export"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/setting_imagebutton_courses_export"
+                        android:text="备份课表到sd卡"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@id/setting_imagebutton_courses_export"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/ic_setting_more" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/setting_courses_uoload"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/table_edittext_nocolor" >
+
+                    <TextView
+                        android:id="@+id/setting_text_upload"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/setting_imagebutton_courses_upload"
+                        android:text="上传课表到服务器"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@id/setting_imagebutton_courses_upload"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/ic_setting_more" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:background="@drawable/table_edittext_nocolor"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/setting_notice_onoff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_edittext_nocolor"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/setting_text_onoff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center"
+                    android:text="提醒设置"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/setting_image_onoff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/setting_text_onoff"
+                    android:src="@drawable/ic_notice_open" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/setting_lilnotice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/table_edittext_nocolor" >
+
+                    <TextView
+                        android:id="@+id/setting_text_notice1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="0dp"
+                        android:layout_toLeftOf="@+id/setting_imagebutton_notice"
+                        android:text="课前提醒"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@id/setting_imagebutton_notice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:onClick="changenotice"
+                        android:src="@drawable/ic_setting_on" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/table_edittext_nocolor" >
+
+                    <TextView
+                        android:id="@+id/setting_text_notice2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="提醒时间设置"
+                        android:textSize="18sp" />
+
+                    <RelativeLayout
+                        android:id="@+id/setting_relbutton_notice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/setting_text_notice2"
+                        android:padding="0dp" >
+
+                        <TextView
+                            android:id="@+id/setting_text_notice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/setting_imagebutton_more"
+                            android:background="#0033d5e5"
+                            android:text="提前30分钟"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:id="@id/setting_imagebutton_more"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_setting_more" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/table_edittext_nocolor" >
+
+                    <TextView
+                        android:id="@+id/setting_text_voice"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/setting_imagebutton_voice"
+                        android:text="声音"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@id/setting_imagebutton_voice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:onClick="changevoice"
+                        android:src="@drawable/ic_setting_on" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/table_edittext_nocolor" >
+
+                    <TextView
+                        android:id="@+id/setting_text_vibrate"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/setting_imagebutton_vibrate"
+                        android:text="振动"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@id/setting_imagebutton_vibrate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:onClick="changevibrate"
+                        android:src="@drawable/ic_setting_on" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/setting_button_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/table_edittext_nocolor"
+            android:text="检查更新"
+            android:textSize="18sp"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:id="@+id/rely_update_download"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:background="@drawable/table_edittext_nocolor" >
+
+            <ProgressBar
+                android:id="@+id/progressBar_update_download"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progressDrawable="@drawable/progressbar_color"
+                android:minHeight="50dp"/>
+            
+            <TextView 
+                android:id="@+id/textview_update_download"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+            
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+                android:id="@+id/imageview_update_download"
+                android:src="@drawable/ic_updata_start"
+                android:layout_centerVertical="true"/>
+            
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/setting_button_about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/table_edittext_nocolor"
+            android:onClick="about"
+            android:text="关于学苑"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</ScrollView>

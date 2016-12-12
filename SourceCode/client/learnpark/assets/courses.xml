@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<courses>
+	<course>	
+		<day>day1</day>
+		<coursename>运筹学</coursename>
+		<timebegin>08:30</timebegin>
+		<timeend>12:00</timeend>
+		<cite>高博国际</cite>
+		<teacher>余老师</teacher>
+		<info>项目</info>
+	</course>
+	<course>	
+		<day>day1</day>
+		<coursename>运筹学</coursename>
+		<timebegin>13:30</timebegin>
+		<timeend>17:00</timeend>
+		<cite>高博国际</cite>
+		<teacher>余老师</teacher>
+		<info>项目</info>
+	</course>
+	<course>	
+		<day>day2</day>
+		<coursename>运筹学</coursename>
+		<timebegin>08:30</timebegin>
+		<timeend>12:00</timeend>
+		<cite>高博国际</cite>
+		<teacher>余老师</teacher>
+		<info>项目</info>
+	</course>
+	<course>	
+		<day>day2</day>
+		<coursename>运筹学</coursename>
+		<timebegin>13:30</timebegin>
+		<timeend>17:00</timeend>
+		<cite>高博国际</cite>
+		<teacher>余老师</teacher>
+		<info>项目</info>
+	</course>
+	
+</courses>

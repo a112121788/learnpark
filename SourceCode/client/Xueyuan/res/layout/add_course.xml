@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/week" />
+
+        <Spinner
+            android:id="@+id/add_week"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/week" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/add_coursename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/course"
+        android:hint="课程名字"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/add_timebegin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:drawableLeft="@drawable/time"
+        android:text="上课时间 :08:00"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/edittext_bottom" />
+
+    <TextView
+        android:id="@+id/add_timeend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="5dp"
+        android:drawableLeft="@drawable/time"
+        android:text="下课时间 :10:00"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/edittext_bottom" />
+
+    <EditText
+        android:id="@+id/add_cite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/cite"
+        android:hint="上课地点"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/add_classname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/teacher"
+        android:hint="班级名称"
+        android:textSize="16sp" />
+
+
+
+</LinearLayout>

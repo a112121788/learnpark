@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffe5e5e5"
+        android:orientation="vertical" >
+
+        <!-- 教师信息 -->
+
+        <RelativeLayout
+            android:id="@+id/tab1_user_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/table_shape_text" >
+
+            <ImageView
+                android:id="@+id/image_user"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/ic_user" />
+
+            <LinearLayout
+                android:id="@+id/text_text_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="0dp"
+                android:layout_toRightOf="@id/image_user"
+                android:orientation="vertical" >
+
+                <!-- 昵称 -->
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/tab1_text_nicheng"
+                        style="@style/tab1_text_tiaomustyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/tab1_text_nicheng" />
+
+                    <TextView
+                        android:id="@+id/tab1_textview_nicheng"
+                        style="@style/tab1_text_neirongstyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/tab1_text_nicheng"
+                        android:text="@string/tab1_text_nicheng1" />
+                </RelativeLayout>
+
+                <!-- 今日课程 -->
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/tab1_text_jinri"
+                        style="@style/tab1_text_tiaomustyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/tab1_text_jinri" />
+
+                    <TextView
+                        android:id="@+id/tab1_textview_jinri"
+                        style="@style/tab1_text_neirongstyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/tab1_text_jinri"
+                        android:text="@string/tab1_text_jinri1" />
+                </RelativeLayout>
+
+                <!-- 明日课程 -->
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/tab1_text_mingri"
+                        style="@style/tab1_text_tiaomustyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/tab1_text_mingri" />
+
+                    <TextView
+                        android:id="@+id/tab1_textview_mingri"
+                        style="@style/tab1_text_neirongstyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/tab1_text_mingri"
+                        android:text="@string/tab1_text_mingri1" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- 点名课程信息 -->
+
+        <RelativeLayout
+            android:id="@+id/tab1_dianming"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/table_shape_text" >
+
+            <TextView
+                android:id="@+id/tab1_text_shangkekecheng"
+                style="@style/tab1_text_tiaomustyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="#5566CDAA"
+                android:maxWidth="35dp"
+                android:text="@string/tab1_text_shangkekecheng" />
+
+            <LinearLayout
+                android:id="@+id/text_dianming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="0dp"
+                android:layout_toRightOf="@id/tab1_text_shangkekecheng"
+                android:orientation="vertical" >
+
+                <!-- 星期 -->
+
+                <TextView
+                    android:id="@+id/tab1_text_xingqi"
+                    style="@style/tab1_text_tiaomustyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/tab1_text_xingqi" />
+
+                <!-- 课程 -->
+
+                <TextView
+                    android:id="@+id/tab1_text_kecheng"
+                    style="@style/tab1_text_tiaomustyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/tab1_text_kecheng" />
+
+                <!-- 时间 -->
+
+                <TextView
+                    android:id="@+id/tab1_text_shijian"
+                    style="@style/tab1_text_tiaomustyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/tab1_text_shijian" />
+                
+                
+                <!-- 地点 -->
+
+                <TextView
+                    android:id="@+id/tab1_text_didian"
+                    style="@style/tab1_text_tiaomustyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/tab1_text_didian" />
+
+                <!--
+                     专业
+
+                <TextView
+                    android:id="@+id/tab1_text_zhuanye"
+                    style="@style/tab1_text_tiaomustyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/tab1_text_zhuanye" />
+                -->
+
+
+                <!-- 班级 -->
+
+                <TextView
+                    android:id="@+id/tab1_text_banji"
+                    style="@style/tab1_text_tiaomustyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/tab1_text_banji" />
+
+                <!-- 应到人数 -->
+
+
+                <!--
+                     <TextView
+                    android:id="@+id/tab1_text_sumstudents"
+                    style="@style/tab1_text_tiaomustyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/tab1_text_renshu" />
+                -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/text_kechengxuanze"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="-2dp"
+                android:layout_marginRight="-5dp"
+                android:layout_marginTop="0dp"
+                android:layout_toRightOf="@id/text_dianming"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/table_shape_nopadding"
+                    android:orientation="horizontal" >
+
+                    <Spinner
+                        android:id="@+id/spinner_xuanke"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:entries="@array/xuankeSpinner"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/image_spinner"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="6"
+                        android:gravity="right"
+                        android:text="▼" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/tab1_xuanke_left"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/left" />
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/xuankeviewpager"
+                        android:layout_width="0dp"
+                        android:layout_height="130dp"
+                        android:layout_weight="7" />
+
+                    <Button
+                        android:id="@+id/tab1_xuanke_right"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/right" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- 开始点名按钮 -->
+
+        <Button
+            android:id="@+id/tab1_button_dianming"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/table_shape_button"
+            android:text="@string/tab1_dianming1"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/tab1_button_dianming1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/table_shape_button"
+            android:text="@string/tab1_dianming2"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+</ScrollView>

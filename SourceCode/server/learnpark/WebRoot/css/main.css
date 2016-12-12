@@ -1,0 +1,35 @@
+#header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999px;
+	background: #66CDAA;
+	color: #fdfdfd;
+}
+
+#contenter {
+	border: 1px;
+	margin-top: 44px;
+	margin-bottom: 44px;
+}
+
+#footer {
+	z-index: 999px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	z-index: 9999;
+	overflow: hidden;
+	_position: absolute;
+	overflow: hidden;
+	background: #66CDAA;
+}
+
+.items {
+	border: 1px solid #000;
+	-moz-border-radius: 5px; /* Gecko browsers */
+	-webkit-border-radius: 5px; /* Webkit browsers */
+	border-radius: 5px; /* W3C syntax */
+	margin-bottom: 10px;
+}

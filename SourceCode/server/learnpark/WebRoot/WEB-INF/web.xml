@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5">
+	<display-name>JA01114-learnpark</display-name>
+
+	<!-- 超级管理员端 -->
+	<servlet>
+		<servlet-name>adminAlterPasswordServlet</servlet-name>
+		<servlet-class>net.learnpark.admin.web.AlterPasswordServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>adminAlterPasswordServlet</servlet-name>
+		<url-pattern>/admin/servlet/AlterPasswordServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>adminCheckUserServlet</servlet-name>
+		<servlet-class>net.learnpark.admin.web.CheckUserServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>adminCheckUserServlet</servlet-name>
+		<url-pattern>/admin/servlet/CheckUserServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>adminLogoutServlet</servlet-name>
+		<servlet-class>net.learnpark.admin.web.LogoutServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>adminLogoutServlet</servlet-name>
+		<url-pattern>/admin/servlet/LogoutServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>adminModifyOpinionServlet</servlet-name>
+		<servlet-class>net.learnpark.admin.web.ModifyOpinionServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>adminModifyOpinionServlet</servlet-name>
+		<url-pattern>/admin/servlet/ModifyOpinionServlet</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>adminSendEmaiServlet</servlet-name>
+		<servlet-class>net.learnpark.admin.web.SendEmaiServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>adminSendEmaiServlet</servlet-name>
+		<url-pattern>/admin/servlet/SendEmaiServlet</url-pattern>
+	</servlet-mapping>
+
+
+
+	<!-- 教师android端 -->
+	<servlet>
+		<servlet-name>teacherappCheckServlet</servlet-name>
+		<servlet-class>net.learnpark.app.teacher.service.CheckServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>teacherappCheckServlet</servlet-name>
+		<url-pattern>/teacherapp/servlet/CheckServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>teacherappForgetPasswordServlet</servlet-name>
+		<servlet-class>net.learnpark.app.teacher.service.ForgetPasswordServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>teacherappForgetPasswordServlet</servlet-name>
+		<url-pattern>/teacherapp/servlet/ForgetPasswordServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>teacherappGetClassesList</servlet-name>
+		<servlet-class>net.learnpark.app.teacher.service.GetClassesList</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>teacherappGetClassesList</servlet-name>
+		<url-pattern>/teacherapp/servlet/GetClassesList</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>teacherappGetCoursesList</servlet-name>
+		<servlet-class>net.learnpark.app.teacher.service.GetCoursesList</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>teacherappGetCoursesList</servlet-name>
+		<url-pattern>/teacherapp/servlet/GetCoursesList</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>teacherappGetStudentsList</servlet-name>
+		<servlet-class>net.learnpark.app.teacher.service.GetStudentsList</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>teacherappGetStudentsList</servlet-name>
+		<url-pattern>/teacherapp/servlet/GetStudentsList</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>teacherappGetUserInfoServlet</servlet-name>
+		<servlet-class>net.learnpark.app.teacher.service.GetUserInfoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>teacherappGetUserInfoServlet</servlet-name>
+		<url-pattern>/teacherapp/servlet/GetUserInfoServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>teacherappModifyServlet</servlet-name>
+		<servlet-class>net.learnpark.app.teacher.service.ModifyServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>teacherappModifyServlet</servlet-name>
+		<url-pattern>/teacherapp/servlet/ModifyServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>teacherappRegisterServlet</servlet-name>
+		<servlet-class>net.learnpark.app.teacher.service.RegisterServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>teacherappRegisterServlet</servlet-name>
+		<url-pattern>/teacherapp/servlet/RegisterServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>teacherappSavePhotoServlet</servlet-name>
+		<servlet-class>net.learnpark.app.teacher.service.SavePhotoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>teacherappSavePhotoServlet</servlet-name>
+		<url-pattern>/teacherapp/servlet/SavePhotoServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>teacherappUpLoadCourses</servlet-name>
+		<servlet-class>net.learnpark.app.teacher.service.UpLoadCourses</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>teacherappUpLoadCourses</servlet-name>
+		<url-pattern>/teacherapp/servlet/UpLoadCourses</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>teacherappUpLoadQiandaoMessages</servlet-name>
+		<servlet-class>net.learnpark.app.teacher.service.UpLoadQiandaoMessages</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>teacherappUpLoadQiandaoMessages</servlet-name>
+		<url-pattern>/teacherapp/servlet/UpLoadQiandaoMessages</url-pattern>
+	</servlet-mapping>
+
+
+
+
+	<!-- 学生 android端 -->
+	<servlet>
+		<servlet-name>wechat</servlet-name>
+		<servlet-class>net.learnpark.wechat.WechatCallbackApi</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>wechat</servlet-name>
+		<url-pattern>/wechat</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>CheckServlet</servlet-name>
+		<servlet-class>net.learnpark.app.service.CheckServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CheckServlet</servlet-name>
+		<url-pattern>/servlet/CheckServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ForgetPasswordServlet</servlet-name>
+		<servlet-class>net.learnpark.app.service.ForgetPasswordServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ForgetPasswordServlet</servlet-name>
+		<url-pattern>/servlet/ForgetPasswordServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>GetUserInfoServlet</servlet-name>
+		<servlet-class>net.learnpark.app.service.GetUserInfoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetUserInfoServlet</servlet-name>
+		<url-pattern>/servlet/GetUserInfoServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>GetCourseServlet</servlet-name>
+		<servlet-class>net.learnpark.app.service.GetCourseServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetCourseServlet</servlet-name>
+		<url-pattern>/servlet/GetCourseServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>GetFileCommonServlet</servlet-name>
+		<servlet-class>net.learnpark.app.service.GetFileCommonServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetFileCommonServlet</servlet-name>
+		<url-pattern>/servlet/GetFileCommonServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>GetMessageListServlet</servlet-name>
+		<servlet-class>net.learnpark.app.service.GetMessageListServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetMessageListServlet</servlet-name>
+		<url-pattern>/servlet/GetMessageListServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>getPlanExamservlet</servlet-name>
+		<servlet-class>net.learnpark.app.service.getPlanExamservlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>getPlanExamservlet</servlet-name>
+		<url-pattern>/servlet/getPlanExamservlet</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>ModifyUserInfoServlet</servlet-name>
+		<servlet-class>net.learnpark.app.service.ModifyUserInfoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ModifyUserInfoServlet</servlet-name>
+		<url-pattern>/servlet/ModifyUserInfoServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>PutMessageServlet</servlet-name>
+		<servlet-class>net.learnpark.app.service.PutMessageServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PutMessageServlet</servlet-name>
+		<url-pattern>/servlet/PutMessageServlet</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>RegisterServlet</servlet-name>
+		<servlet-class>net.learnpark.app.service.RegisterServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegisterServlet</servlet-name>
+		<url-pattern>/servlet/RegisterServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>SaveCourseServlet</servlet-name>
+		<servlet-class>net.learnpark.app.service.SaveCourseServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SaveCourseServlet</servlet-name>
+		<url-pattern>/servlet/SaveCourseServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>SaveFeedbackServlet</servlet-name>
+		<servlet-class>net.learnpark.app.service.SaveFeedbackServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SaveFeedbackServlet</servlet-name>
+		<url-pattern>/servlet/SaveFeedbackServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>SavePhotoServlet</servlet-name>
+		<servlet-class>net.learnpark.app.service.SavePhotoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SavePhotoServlet</servlet-name>
+		<url-pattern>/servlet/SavePhotoServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>savePlanExamServlet</servlet-name>
+		<servlet-class>net.learnpark.app.service.savePlanExamServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>savePlanExamServlet</servlet-name>
+		<url-pattern>/servlet/savePlanExamServlet</url-pattern>
+	</servlet-mapping>
+
+	<!--教师web端 -->
+	<servlet>
+		<servlet-name>teacherAlterPasswordServlet</servlet-name>
+		<servlet-class>net.learnpark.teacher.web.AlterPasswordServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>teacherAlterPasswordServlet</servlet-name>
+		<url-pattern>/teacher/servlet/AlterPasswordServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>teacherCheckUserServlet</servlet-name>
+		<servlet-class>net.learnpark.teacher.web.CheckUserServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>teacherCheckUserServlet</servlet-name>
+		<url-pattern>/teacher/servlet/CheckUserServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>teacherGetNewPasswordServlet</servlet-name>
+		<servlet-class>net.learnpark.teacher.web.GetNewPasswordServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>teacherGetNewPasswordServlet</servlet-name>
+		<url-pattern>/teacher/servlet/GetNewPasswordServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>teacherLogoutServlet</servlet-name>
+		<servlet-class>net.learnpark.teacher.web.LogoutServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>teacherLogoutServlet</servlet-name>
+		<url-pattern>/teacher/servlet/LogoutServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>teacherSetNewPasswordServlet</servlet-name>
+		<servlet-class>net.learnpark.teacher.web.SetNewPasswordServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>teacherSetNewPasswordServlet</servlet-name>
+		<url-pattern>/teacher/servlet/SetNewPasswordServlet</url-pattern>
+	</servlet-mapping>
+	
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
